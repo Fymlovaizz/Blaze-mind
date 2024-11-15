@@ -150,6 +150,7 @@ Sinh vật:
 
 dm thang ngu
 
+
 ê thằng l
 =======
 
