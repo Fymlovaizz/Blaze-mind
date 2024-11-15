@@ -14,6 +14,7 @@
 #include <NG_Tools/NG.hpp>
 
 #include <evolution/entity.hpp>
+#include <evolution/resource.hpp>
 #include <evolution/environment.hpp>
 
 int main() {
