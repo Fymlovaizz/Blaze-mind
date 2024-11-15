@@ -141,17 +141,4 @@ Sinh vật:
    - Kích thước: 35-55 micromet
    - Di chuyển:
       + Roi
-<<<<<<< HEAD
-<<<<<<< HEAD
       + 120 micromet/giây
-=======
-      + 120 micromet -->
->>>>>>> fca148c2bb3e667074f743667ebcc15259710dd6
-
-dm thang ngu
-
-
-ê thằng l
-=======
-
->>>>>>> a07eee93ed8734f2cbd6cffa2b8806d9dd605a60
