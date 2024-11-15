@@ -1,0 +1,95 @@
+{
+    "theme": {
+        "name": "PA",
+        "type": "light",
+        "author": "Min",
+        "version": "1.0.0",
+        "description": "Default light theme for the Blaze-Mind framework."
+    },
+
+    "system": {
+        "text": {
+            "default": {
+                "default": "",
+                "font": "",
+                "size": 10,
+                "color": []
+            }
+        },
+
+        "background": {
+            "image": "",
+            "color": [],
+            "opacity": 0
+        }
+    },
+
+    "widget": {
+        "interaction-type": {
+            "button": {
+                "default": {
+                    "text": {
+                        "default": "",
+                        "font": "",
+                        "size": 10,
+                        "color": [],
+                        "opacity": 0
+                    },
+
+                    "image": {
+                        "default": "",
+                        "size": [],
+                        "position": [],
+                        "color": [],
+                        "opacity": 0
+                    },
+
+                    "background": {
+                        "color-normal": [],
+                        "color-hover": [],
+                        "color-pressed": [],
+                        "color-disabled": [],
+                        "opacity": 0
+                    },
+
+                    "border": {
+                        "width": 1,
+                        "color": [],
+                        "opacity": 0,
+                        "radius": 0,
+                        "style": "solid"
+                    },
+
+                    "main": {
+                        "size": [],
+                        "position": []
+                    }
+                }
+            }
+        },
+
+        "display-type": {
+
+        },
+
+        "navigative-type": {
+
+        },
+
+        "layout-type": {
+
+        },
+
+        "data-type": {
+
+        },
+
+        "comunication-type": {
+
+        },
+
+        "advanced-type": {
+
+        }
+    }
+}

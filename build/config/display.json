@@ -1,0 +1,679 @@
+{
+    "size": {
+        "desktop": [1920, 1080],
+        "1": [192, 108],
+        "2": [96, 54],
+        "brick": [144, 72],
+        "ceil": [128, 128],
+        "slider": [336, 28],
+        "board": [336, 288],
+        "text": [336, 72]
+    },
+
+    "size_font": {
+        "c":    255,
+        "t0":   200,
+        "t1":   160,
+        "t2":   120,
+        "t3":   96,
+        "t4":   84,
+        "t5":   72,
+        "t6":   60,
+        "h0":   48,
+        "h1":   44,
+        "h2":   40,
+        "h3":   36,
+        "h4":   32,
+        "h5":   28,
+        "h6":   24,
+        "p":    20,
+        "n":    16,
+        "s":    12
+    },
+
+    "other": {
+        "sensor": {
+            "delay": 1.5
+        },
+        "spinbox": {
+            "size": "h6",
+            "width": 30,
+            "max": 50,
+            "min": 0,
+            "step": 1,
+            "value": 17,
+            "delay": 0.05,
+            "opacity": 40
+        },
+        "list": {
+            "size": "p",
+            "height": 36
+        },
+        "checkradio": {
+            "size": "p",
+            "height": 36,
+            "radius": [10, 12]
+        },
+        "checkbox": {
+            "size": "p",
+            "height": 36,
+            "radius": [10, 12],
+            "down": 0.8
+        },
+        "label": {
+            "text": "Добро пожаловать!",
+            "size": "h5",
+            "type": 8,
+            "speed": 75
+        },
+        "entry": {
+            "descripe": "Enter your name!",
+            "text": "",
+            "size": "p",
+            "ptr": [0.1, 25],
+            "delta": 0.5,
+            "hide": [false, "*"],
+            "alphabets": false,
+            "number": false,
+            "limit": -1
+        },
+        "scrollbar": {
+            "volume": 100,
+            "view": 150,
+            "type": true
+        },
+        "slider": {
+            "radius": 8,
+            "view": 100
+        },
+        "bucket": {
+            "radius": 8,
+            "view": 290
+        },
+        "stepper": {
+            "size": [12, 24],
+            "segment": 7,
+            "step": 4
+        },
+        "scale": {
+            "radius": 8,
+            "view": 30
+        }
+    },
+
+    "position": {
+        "button": [96, 54],
+        "sensor": [288, 54],
+        "lever": [480, 54],
+        "spinbox": [672, 54],
+        "frame": [884, 54],
+        "list": [1268, 54],
+        "checkradio": [884, 594],
+        "checkbox": [1268, 594],
+        "label": [96, 162],
+        "entry": [480, 162],
+        "image": [884, 378],
+        "scrollbar": [96, 270],
+        "slider": [480, 270],
+        "bucket": [96, 378],
+        "stepper": [96, 486],
+        "scale": [96, 594]
+    },
+    
+    "themes": [
+        {
+            "name": "Soft Nature",
+            "type": "light",
+            
+            "color-background": [204, 240, 178, 255],
+            "color-background-button": [255, 255, 240, 255],
+            "color-background-list": [240, 255, 240, 255],
+            "color-background-frame": [225, 245, 210, 255],
+            "color-background-label": [215, 245, 225, 255],
+        
+            "color-text-label": [34, 66, 50, 255],
+            "color-text-option": [50, 85, 60, 255],
+            "color-text-system": [0, 0, 0, 255],
+            
+            "color-core-main": [80, 180, 90, 255],
+            "color-core-secondary": [100, 200, 120, 255],
+        
+            "color-outline-border-in": [60, 150, 100, 255],
+            "color-outline-border-out": [80, 170, 110, 255],
+            "color-outline-line": [60, 150, 120, 255],
+            "color-outline-choose": [90, 210, 130, 255],
+            
+            "color-semi-bar": [240, 255, 240, 120],
+            "color-semi-slider-1": [200, 250, 200, 120],
+            "color-semi-slider-2": [170, 230, 180, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetBrainsMono-Bold.ttf",
+            "font-function": "JetBrainsMono-Bold.ttf",
+            "font-option": "JetBrainsMono-Bold.ttf",
+            "font-system": "arial.ttf"
+        },
+
+
+
+        {
+            "name": "Antarctica",
+            "type": "light",
+            
+            "color-background": [210, 240, 250, 255],
+            "color-background-button": [230, 245, 255, 255],
+            "color-background-list": [220, 240, 250, 255],
+            "color-background-frame": [200, 230, 240, 255],
+            "color-background-label": [190, 225, 235, 255],
+        
+            "color-text-label": [50, 70, 90, 255],
+            "color-text-option": [60, 80, 100, 255],
+            "color-text-system": [0, 0, 0, 255],
+            
+            "color-core-main": [0, 150, 200, 255],
+            "color-core-secondary": [60, 180, 220, 255],
+        
+            "color-outline-border-in": [0, 120, 180, 255],
+            "color-outline-border-out": [30, 150, 200, 255],
+            "color-outline-line": [20, 130, 190, 255],
+            "color-outline-choose": [60, 200, 240, 255],
+            
+            "color-semi-bar": [220, 245, 250, 120],
+            "color-semi-slider-1": [200, 240, 250, 120],
+            "color-semi-slider-2": [180, 230, 245, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetBrainsMono-Regular.ttf",
+            "font-function": "JetBrainsMono-Regular.ttf",
+            "font-option": "JetBrainsMono-Regular.ttf",
+            "font-system": "arial.ttf"
+        },
+
+
+
+        {
+            "name": "Twilight Meadow",
+            "type": "light",
+            
+            "color-background": [130, 210, 160, 255],
+            "color-background-button": [235, 245, 225, 255],
+            "color-background-list": [240, 255, 235, 255],
+            "color-background-frame": [225, 245, 210, 255],
+            "color-background-label": [215, 240, 220, 255],
+        
+            "color-text-label": [70, 70, 100, 255],
+            "color-text-option": [70, 70, 100, 255],
+            "color-text-system": [0, 0, 0, 255],
+            
+            "color-core-main": [50, 100, 150, 255],
+            "color-core-secondary": [70, 120, 170, 255],
+        
+            "color-outline-border-in": [45, 55, 85, 255],
+            "color-outline-border-out": [45, 55, 85, 255],
+            "color-outline-line": [45, 55, 85, 255],
+            "color-outline-choose": [70, 120, 170, 255],
+            
+            "color-semi-bar": [240, 255, 235, 70],
+            "color-semi-slider-1": [190, 220, 170, 70],
+            "color-semi-slider-2": [170, 210, 180, 70],
+
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetBrainsMono-Bold.ttf",
+            "font-function": "JetBrainsMono-Bold.ttf",
+            "font-option": "JetBrainsMono-Bold.ttf",
+            "font-system": "arial.ttf"
+        },
+
+
+
+        {
+            "name": "Modern Vibes",
+            "type": "light",
+            
+            "color-background": [255, 255, 255, 255],
+            "color-background-button": [240, 240, 240, 255],
+            "color-background-list": [250, 250, 250, 255],
+            "color-background-frame": [230, 230, 230, 255],
+            "color-background-label": [245, 245, 245, 255],
+        
+            "color-text-label": [40, 40, 40, 255],
+            "color-text-option": [60, 60, 60, 255],
+            "color-text-system": [0, 0, 0, 255],
+            
+            "color-core-main": [0, 188, 212, 255],
+            "color-core-secondary": [0, 150, 136, 255],
+        
+            "color-outline-border-in": [0, 172, 185, 255],
+            "color-outline-border-out": [0, 188, 212, 255],
+            "color-outline-line": [0, 158, 175, 255],
+            "color-outline-choose": [0, 188, 212, 255],
+            
+            "color-semi-bar": [240, 255, 240, 120],
+            "color-semi-slider-1": [220, 240, 250, 120],
+            "color-semi-slider-2": [240, 250, 240, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetbrainsMono-Medium.ttf",
+            "font-function": "JetbrainsMono-Medium.ttf",
+            "font-option": "JetbrainsMono-Medium.ttf",
+            "font-system": "arial.ttf",
+
+            "music-background": "Tranquil-Echoes.mp3"
+        },
+
+
+
+        {
+            "name": "Desert Heat",
+            "type": "light",
+            
+            "color-background": [210, 180, 140, 255],
+            "color-background-button": [220, 190, 150, 255],
+            "color-background-list": [200, 170, 130, 255],
+            "color-background-frame": [230, 200, 160, 255],
+            "color-background-label": [240, 210, 170, 255],
+        
+            "color-text-label": [70, 50, 30, 255],
+            "color-text-option": [80, 60, 40, 255],
+            "color-text-system": [0, 0, 0, 255],
+            
+            "color-core-main": [180, 140, 90, 255],
+            "color-core-secondary": [200, 160, 100, 255],
+        
+            "color-outline-border-in": [150, 110, 70, 255],
+            "color-outline-border-out": [170, 130, 80, 255],
+            "color-outline-line": [140, 100, 60, 255],
+            "color-outline-choose": [200, 160, 100, 255],
+            
+            "color-semi-bar": [200, 180, 140, 120],
+            "color-semi-slider-1": [180, 160, 120, 120],
+            "color-semi-slider-2": [160, 140, 100, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetBrainsMono-Regular.ttf",
+            "font-function": "JetBrainsMono-Regular.ttf",
+            "font-option": "JetBrainsMono-Regular.ttf",
+            "font-system": "arial.ttf"
+        },
+        
+
+
+        {
+            "name": "Sweet Candy",
+            "type": "light",
+            
+            "color-background": [255, 220, 220, 255],
+            "color-background-button": [255, 230, 230, 255],
+            "color-background-list": [255, 240, 240, 255],
+            "color-background-frame": [255, 230, 230, 255],
+            "color-background-label": [255, 240, 240, 255],
+        
+            "color-text-label": [100, 50, 50, 255],
+            "color-text-option": [120, 60, 60, 255],
+            "color-text-system": [0, 0, 0, 255],
+            
+            "color-core-main": [255, 150, 150, 255],
+            "color-core-secondary": [255, 180, 180, 255],
+        
+            "color-outline-border-in": [220, 100, 100, 255],
+            "color-outline-border-out": [240, 130, 130, 255],
+            "color-outline-line": [200, 90, 90, 255],
+            "color-outline-choose": [255, 180, 180, 255],
+            
+            "color-semi-bar": [255, 230, 230, 120],
+            "color-semi-slider-1": [255, 210, 210, 120],
+            "color-semi-slider-2": [255, 190, 190, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetbrainsMono-Italic.ttf",
+            "font-function": "JetbrainsMono-Italic.ttf",
+            "font-option": "JetbrainsMono-Italic.ttf",
+            "font-system": "arial.ttf",
+
+            "music-background": "Candy.mp3",
+            "music-volume": 10
+        },
+
+
+
+        {
+            "name": "Tet Phuong Dong",
+            "type": "light",
+            
+            "color-background": [180, 0, 0, 255],
+            "color-background-button": [235, 60, 60, 255],
+            "color-background-list": [205, 50, 50, 255],
+            "color-background-frame": [215, 80, 80, 255],
+            "color-background-label": [225, 60, 60, 255],
+            
+            "color-text-label": [255, 255, 0, 255],
+            "color-text-option": [255, 255, 0, 255],
+            "color-text-system": [255, 255, 0, 255],
+            
+            "color-core-main": [255, 100, 100, 255],
+            "color-core-secondary": [255, 130, 130, 255],
+            
+            "color-outline-border-in": [255, 165, 0, 255],
+            "color-outline-border-out": [255, 165, 0, 255],
+            "color-outline-line": [255, 165, 0, 255],
+            "color-outline-choose": [255, 165, 0, 255],
+            
+            "color-semi-bar": [225, 0, 0, 120],
+            "color-semi-slider-1": [235, 0, 0, 120],
+            "color-semi-slider-2": [235, 0, 0, 120],
+            
+            "thinkness-outline-border-in": 2,
+            "thinkness-outline-border-out": 4,
+            "thinkness-outline-choose": 4,
+            
+            "font-label": "JetBrainsMono-Regular.ttf",
+            "font-function": "JetBrainsMono-Regular.ttf",
+            "font-option": "JetBrainsMono-Regular.ttf",
+            "font-system": "JetBrainsMono-Regular.ttf"
+        },
+
+
+
+        {
+            "name": "Deep Blues",
+            "type": "dark",
+            
+            "color-background": [10, 20, 30, 255],
+            "color-background-button": [30, 40, 60, 255],
+            "color-background-list": [20, 30, 50, 255],
+            "color-background-frame": [40, 50, 70, 255],
+            "color-background-label": [20, 30, 50, 255],
+        
+            "color-text-label": [200, 220, 240, 255],
+            "color-text-option": [180, 200, 220, 255],
+            "color-text-system": [255, 255, 255, 255],
+            
+            "color-core-main": [0, 120, 180, 255],
+            "color-core-secondary": [0, 150, 200, 255],
+        
+            "color-outline-border-in": [60, 80, 100, 255],
+            "color-outline-border-out": [80, 100, 120, 255],
+            "color-outline-line": [40, 60, 80, 255],
+            "color-outline-choose": [0, 150, 200, 255],
+            
+            "color-semi-bar": [10, 20, 30, 120],
+            "color-semi-slider-1": [30, 40, 60, 120],
+            "color-semi-slider-2": [20, 30, 50, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetBrainsMono-Bold.ttf",
+            "font-function": "JetBrainsMono-Bold.ttf",
+            "font-option": "JetBrainsMono-Bold.ttf",
+            "font-system": "arial.ttf"
+        },
+
+        
+
+        {
+            "name": "Ancient Stone",
+            "type": "dark",
+            
+            "color-background": [50, 50, 50, 255],
+            "color-background-button": [70, 70, 70, 255],
+            "color-background-list": [60, 60, 60, 255],
+            "color-background-frame": [80, 80, 80, 255],
+            "color-background-label": [90, 90, 90, 255],
+        
+            "color-text-label": [200, 200, 200, 255],
+            "color-text-option": [180, 180, 180, 255],
+            "color-text-system": [255, 255, 255, 255],
+            
+            "color-core-main": [150, 120, 90, 255],
+            "color-core-secondary": [180, 150, 110, 255],
+        
+            "color-outline-border-in": [120, 100, 70, 255],
+            "color-outline-border-out": [140, 110, 80, 255],
+            "color-outline-line": [110, 90, 60, 255],
+            "color-outline-choose": [180, 150, 110, 255],
+            
+            "color-semi-bar": [60, 60, 60, 120],
+            "color-semi-slider-1": [80, 80, 80, 120],
+            "color-semi-slider-2": [100, 100, 100, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetBrainsMono-Bold.ttf",
+            "font-function": "JetBrainsMono-Bold.ttf",
+            "font-option": "JetBrainsMono-Bold.ttf",
+            "font-system": "arial.ttf"
+        },
+
+        
+
+        {
+            "name": "Cave Depths",
+            "type": "dark",
+            
+            "color-background": [5, 5, 10, 255],
+            "color-background-button": [15, 15, 20, 255],
+            "color-background-list": [10, 10, 15, 255],
+            "color-background-frame": [25, 25, 30, 255],
+            "color-background-label": [20, 20, 25, 255],
+        
+            "color-text-label": [200, 200, 200, 255],
+            "color-text-option": [180, 180, 180, 255],
+            "color-text-system": [255, 255, 255, 255],
+            
+            "color-core-main": [30, 30, 40, 255],
+            "color-core-secondary": [45, 45, 60, 255],
+        
+            "color-outline-border-in": [20, 20, 30, 255],
+            "color-outline-border-out": [35, 35, 45, 255],
+            "color-outline-line": [15, 15, 25, 255],
+            "color-outline-choose": [45, 45, 60, 255],
+            
+            "color-semi-bar": [5, 5, 10, 120],
+            "color-semi-slider-1": [15, 15, 20, 120],
+            "color-semi-slider-2": [10, 10, 15, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetBrainsMono-Bold.ttf",
+            "font-function": "JetBrainsMono-Bold.ttf",
+            "font-option": "JetBrainsMono-Bold.ttf",
+            "font-system": "arial.ttf"
+        },
+
+
+
+        {
+            "name": "Cosmic Night",
+            "type": "dark",
+            
+            "color-background": [0, 0, 10, 255],
+            "color-background-button": [10, 10, 20, 255],
+            "color-background-list": [5, 5, 15, 255],
+            "color-background-frame": [15, 15, 25, 255],
+            "color-background-label": [10, 10, 20, 255],
+        
+            "color-text-label": [255, 255, 255, 255],
+            "color-text-option": [240, 240, 240, 255],
+            "color-text-system": [255, 255, 255, 255],
+            
+            "color-core-main": [60, 90, 255, 255],
+            "color-core-secondary": [80, 110, 255, 255],
+        
+            "color-outline-border-in": [30, 50, 150, 255],
+            "color-outline-border-out": [50, 70, 200, 255],
+            "color-outline-line": [20, 40, 130, 255],
+            "color-outline-choose": [80, 110, 255, 255],
+            
+            "color-semi-bar": [0, 0, 10, 120],
+            "color-semi-slider-1": [10, 10, 20, 120],
+            "color-semi-slider-2": [5, 5, 15, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetbrainsMono-ExtraboldItalic.ttf",
+            "font-function": "JetbrainsMono-ExtraboldItalic.ttf",
+            "font-option": "JetbrainsMono-ExtraboldItalic.ttf",
+            "font-system": "arial.ttf"
+        },
+
+
+
+        {
+            "name": "Galaxy",
+            "type": "dark",
+            
+            "color-background": [10, 10, 20, 255],
+            "color-background-button": [20, 20, 30, 255],
+            "color-background-list": [15, 15, 25, 255],
+            "color-background-frame": [25, 25, 35, 255],
+            "color-background-label": [20, 20, 30, 255],
+        
+            "color-text-label": [200, 200, 255, 255],
+            "color-text-option": [180, 180, 240, 255],
+            "color-text-system": [255, 255, 255, 255],
+            
+            "color-core-main": [80, 80, 200, 255],
+            "color-core-secondary": [120, 120, 250, 255],
+        
+            "color-outline-border-in": [60, 60, 180, 255],
+            "color-outline-border-out": [100, 100, 220, 255],
+            "color-outline-line": [50, 50, 160, 255],
+            "color-outline-choose": [120, 120, 250, 255],
+            
+            "color-semi-bar": [10, 10, 20, 120],
+            "color-semi-slider-1": [20, 20, 30, 120],
+            "color-semi-slider-2": [15, 15, 25, 120],
+            
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+            
+            "font-label": "JetbrainsMono-BoldItalic.ttf",
+            "font-function": "JetbrainsMono-BoldItalic.ttf",
+            "font-option": "JetbrainsMono-BoldItalic.ttf",
+            "font-system": "arial.ttf"
+        },
+
+
+
+        {
+            "name": "Astral Journey",
+            "type": "dark",
+
+            "color-background": [0, 0, 10, 255],
+            "color-background-button": [10, 10, 20, 255],
+            "color-background-list": [5, 5, 15, 255],
+            "color-background-frame": [20, 20, 30, 255],
+            "color-background-label": [15, 15, 25, 255],
+
+            "color-text-label": [255, 200, 200, 255],
+            "color-text-option": [255, 180, 180, 255],
+            "color-text-system": [255, 255, 255, 255],
+
+            "color-core-main": [200, 50, 50, 255],
+            "color-core-secondary": [255, 80, 40, 255],
+
+            "color-outline-border-in": [150, 40, 40, 255],
+            "color-outline-border-out": [200, 60, 40, 255],
+            "color-outline-line": [130, 30, 30, 255],
+            "color-outline-choose": [255, 80, 40, 255],
+
+            "color-semi-bar": [0, 0, 10, 120],
+            "color-semi-slider-1": [10, 10, 20, 120],
+            "color-semi-slider-2": [5, 5, 15, 120],
+
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 2,
+
+            "font-label": "JetbrainsMono-Extrabold.ttf",
+            "font-function": "JetbrainsMono-Extrabold.ttf",
+            "font-option": "JetbrainsMono-Extrabold.ttf",
+            "font-system": "arial.ttf",
+
+            "music-background": "Hollow-Knight.wav"
+        },
+
+
+
+        {
+            "name": "Neon Pulse",
+            "type": "dark",
+            
+            "color-background": [10, 10, 10, 255],
+            "color-background-button": [20, 20, 20, 255],
+            "color-background-list": [15, 15, 15, 255],
+            "color-background-frame": [25, 25, 25, 255],
+            "color-background-label": [30, 30, 30, 255],
+            
+            "color-text-label": [255, 255, 255, 255],
+            "color-text-option": [255, 255, 255, 255],
+            "color-text-system": [255, 255, 255, 255],
+            
+            "color-core-main": [255, 50, 120, 255],
+            "color-core-secondary": [60, 120, 255, 255],
+            "color-outline-border-in": [240, 240, 240, 255],
+            "color-outline-border-out": [240, 240, 240, 255],
+            "color-outline-line": [240, 240, 240, 255],
+            "color-outline-choose": [70, 130, 255, 255],
+            
+            "color-semi-bar": [120, 120, 120, 150],
+        
+            "color-semi-slider-1": [100, 100, 255, 120],
+            "color-semi-slider-2": [100, 100, 255, 120],
+        
+            "thinkness-outline-border-in": 1,
+            "thinkness-outline-border-out": 2,
+            "thinkness-outline-choose": 3,
+                                        
+            "font-label": "JetbrainsMono-Italic.ttf",
+            "font-function": "JetbrainsMono-Italic.ttf",
+            "font-option": "JetBrainsMono-Regular.ttf",
+            "font-system": "arial.ttf",
+        
+            "music-background": "ThuDoCypherFtTuCuuMonHoiUcRemix.mp3",
+            "music-volume": 10
+        }
+        
+    ],
+      
+    "paths": {
+        "resource": "resources\\",
+        "font": "fonts\\",
+        "image": "images\\",
+        "music": "music\\",
+
+        "fonts": {
+            "system"                : "arial.ttf"
+        },
+        "images": {
+            "logo": "ng-logo.jpg"
+        }
+    }
+}

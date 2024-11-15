@@ -1,0 +1,9 @@
+{
+    "theme": {
+        "name": "KN",
+        "type": "dark",
+        "author": "Min",
+        "version": "1.0.0",
+        "description": "Default dark theme for the Blaze-Mind framework."
+    }
+}

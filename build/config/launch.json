@@ -1,0 +1,19 @@
+{
+    "theme": 11,
+    "music-theme": false,
+
+    "mode": 0,
+    "modes": [
+        "test function",
+        "test interface",
+        "test rule",
+        "test game"
+    ],
+
+    "fullscreen": false,
+
+    "limit-fps": true,
+    "fps-limit": 120,
+
+    "vertical-sync-enabled": true
+}

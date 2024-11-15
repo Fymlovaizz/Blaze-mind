@@ -1,0 +1,92 @@
+[
+    {
+        "word": "Education",
+        "pronunciation": "ˌedʒʊˈkeɪʃən",
+        "type": "noun",
+        "meaning": "Giáo dục",
+        "explanation": "The process of receiving or giving systematic instruction, especially at a school or university",
+        "explanation-vietnamese": "Quá trình nhận hoặc cung cấp chỉ dẫn có hệ thống, đặc biệt là tại trường học hoặc đại học",
+        "example": "Education is the key to success"
+    },
+    {
+        "word": "Curriculum",
+        "pronunciation": "kəˈrɪkjʊləm",
+        "type": "noun",
+        "meaning": "Chương trình giảng dạy",
+        "explanation": "The subjects comprising a course of study in a school or college",
+        "explanation-vietnamese": "Các môn học cấu thành một khóa học tại trường học hoặc đại học",
+        "example": "The curriculum includes math, science, and literature"
+    },
+    {
+        "word": "Scholarship",
+        "pronunciation": "ˈskɒlərʃɪp",
+        "type": "noun",
+        "meaning": "Học bổng",
+        "explanation": "A grant or payment made to support a student's education, awarded on the basis of academic or other achievement",
+        "explanation-vietnamese": "Một khoản tài trợ hoặc thanh toán được cấp để hỗ trợ giáo dục của sinh viên, được trao dựa trên thành tích học tập hoặc thành tựu khác",
+        "example": "She received a scholarship to study abroad"
+    },
+    {
+        "word": "Enrollment",
+        "pronunciation": "ɪnˈroʊlmənt",
+        "type": "noun",
+        "meaning": "Đăng ký",
+        "explanation": "The act of enrolling or the state of being enrolled, especially in a school or college",
+        "explanation-vietnamese": "Hành động đăng ký hoặc trạng thái đã đăng ký, đặc biệt là tại trường học hoặc đại học",
+        "example": "The enrollment for the new semester has begun"
+    },
+    {
+        "word": "Assessment",
+        "pronunciation": "əˈsɛsmənt",
+        "type": "noun",
+        "meaning": "Đánh giá",
+        "explanation": "The evaluation or estimation of the nature, quality, or ability of someone or something",
+        "explanation-vietnamese": "Việc đánh giá hoặc ước lượng bản chất, chất lượng hoặc khả năng của ai đó hoặc điều gì đó",
+        "example": "The assessment will be conducted at the end of the course"
+    },
+    {
+        "word": "Pedagogy",
+        "pronunciation": "ˈpɛdəˌɡoʊdʒi",
+        "type": "noun",
+        "meaning": "Sư phạm",
+        "explanation": "The method and practice of teaching, especially as an academic subject or theoretical concept",
+        "explanation-vietnamese": "Phương pháp và thực hành giảng dạy, đặc biệt là như một môn học học thuật hoặc khái niệm lý thuyết",
+        "example": "Effective pedagogy enhances student learning"
+    },
+    {
+        "word": "Literacy",
+        "pronunciation": "ˈlɪtərəsi",
+        "type": "noun",
+        "meaning": "Khả năng đọc viết",
+        "explanation": "The ability to read and write",
+        "explanation-vietnamese": "Khả năng đọc và viết",
+        "example": "Literacy is essential for personal and professional development"
+    },
+    {
+        "word": "Extracurricular",
+        "pronunciation": "ˌɛkstrə kəˈrɪkjʊlər",
+        "type": "adjective",
+        "meaning": "Ngoại khóa",
+        "explanation": "Activities that fall outside the realm of the normal curriculum of school or university education",
+        "explanation-vietnamese": "Các hoạt động nằm ngoài chương trình giảng dạy bình thường của giáo dục tại trường học hoặc đại học",
+        "example": "Extracurricular activities help develop teamwork skills"
+    },
+    {
+        "word": "Tutor",
+        "pronunciation": "ˈtjuːtər",
+        "type": "noun",
+        "meaning": "Gia sư",
+        "explanation": "A private teacher who provides additional teaching to students on a one-to-one basis",
+        "explanation-vietnamese": "Một giáo viên tư nhân cung cấp giảng dạy thêm cho học sinh theo hình thức một thầy một trò",
+        "example": "She hired a tutor to improve her math skills"
+    },
+    {
+        "word": "Discipline",
+        "pronunciation": "ˈdɪsəplɪn",
+        "type": "noun",
+        "meaning": "Kỷ luật",
+        "explanation": "The practice of training people to obey rules or a code of behavior",
+        "explanation-vietnamese": "Việc thực hành đào tạo mọi người tuân theo quy tắc hoặc quy chuẩn hành vi",
+        "example": "Discipline is important for student success"
+    }
+]

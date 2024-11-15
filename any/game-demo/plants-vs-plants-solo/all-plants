@@ -1,0 +1,212 @@
+Hệ đậu:
+    - Đậu bắn đạn
+    - Đậu hai viên
+    - Đậu ba đầu
+    - Đậu hai đầu
+    - Đậu súng máy: giá 360 -> 420, bỏ khả năng tự động ăn lá
+    - Đậu vỉ
+    - Hành tím bay
+    - Gừng đuốc đỏ
+    - Đậu cổ đại
+    - Hành Bowling
+    - Khế: giá 125 -> 175
+    - Dây leo đậu: giá 125 -> 175 và tăng sát thương *1.5 -> *1.25
+
+Hệ ánh sáng:
+    - Hoa hướng dương
+    - Hoa hướng dương đôi
+    - Nấm mặt trời
+    - Hạt đậu vàng
+    - Hoa hướng dương cổ đại
+    - Cà chua ánh sáng: giá 150, sản suất mỗi 25 / 1 zombie và làm choáng chúng 1s
+    - Dây leo ánh sáng: giá 75, sản xuất 50, đánh gần làm choáng zombie 0.25s với tốc đánh chậm
+    - Hoa vàng
+    - Xô thơm đắc đạo: giá 50, biến 1 zombie thành phật và sản xuất 50 sun mỗi 3 ô
+    - Nấm ếch: giá 200, thời gian tiêu hóa tương tự Hoa ăn thịt
+    - Hoa vẽ nắng hút sinh lực: giá 100, bắt lấy 1 zombie nhưng sẽ mất bất tử, chuyển hóa dần sinh lực zombie thành sun
+
+Hệ hàng rào:
+    - Hàng rào óc chó
+    - Ốc chó cao
+    - Cải đẩy lùi
+    - Mít gai
+    - Ốc chó vô cực
+    - Ốc chó cổ đại: thời gian hồi 7s -> 10s
+    - Nhựa ruồi phóng đạn: giá 250
+    - Đậu phụ bắn đạn
+    - Khoai tây ngọt: giá 100
+    - Bí ngô bao bọc: giá 125, hp tương tự wall-nut
+    - Bạch đằng nhau kẹo: giá 125 -> 175
+    ; - Cải xanh giữ chân
+    ; - Quái thú giá đỗ
+    ; - Nấm mực bức ăn thịt
+
+Hệ bọc phá:
+    - Mìn khoai tây
+    - Bom hoa anh đào
+    - Mìn khoai tây cổ đại: giá 50 -> 75
+    - Đại bác dâu tây
+    - Bom nho: giá 150 -> 225
+    - Rễ bỏ trốn
+    - Bồ công anh: tăng sát thương 40 -> 70, giảm thời gian mọc lại hoa -> 10s
+    - Lựu nổ: giá 150 -> 200
+    - Hạt ốc chó nổ: giá 50 -> 125, thời gian hồi tương tự Hàng rào ốc chó
+    - Dây leo bộc phá: giá 125 -> 150
+    - Hoa bong bóng: giá 320 -> 450
+    - Mìn dịch chuyển: giá 150
+    - Mâm sôi ném bom: giá 240
+    - Nấm nguyên tử: tương tự pvz1
+
+Hệ pháo thủ:
+    - Bắp cải ném
+    - Ngô ném bơ
+    - Đại bác dừa
+    - Dưa hấu ném
+    - Akee
+    - Đại bác chuối
+    - Pháo bắn táo
+    - Đậu pháo
+    - Dây leo nho
+    - Đậu tương ném gà
+    - cây gạo ném
+
+Hệ xuyên thấu:
+    - Hoa boomerang
+    - Hoa gai mặt đất
+    - Hoa gai đá
+    - Đậu laser
+    - Xương rồng bắn
+    - Cây kế sữa
+    - Dây leo gai
+    - Bẫy quả dây leo gai
+    - Đậu bắp liên kích
+    - Nha đam xuyên thấu
+    - Gai trái tim rỉ máu
+    - Hoa bí tím ném nước
+    - Cây tre chiến binh
+    - Dây leo bắn nước
+
+Hệ băng:
+    - Rau diếp băng
+    - Dưa hấu ném băng
+    - Đậu băng
+    - Hoa rồng băng
+    - Tên lửa tầm gửi
+    - Hoa băng
+    - Hoa trạng nguyên băng
+    - Hoa gai băng
+    - Ớt băng
+    - Hoa Bonnet băng
+    - Nấm băng thổi gió
+
+Hệ cô đọng:
+    - Dây leo phá mộ
+    - Đậu lò xo
+    - Hành hà hơi
+    - Dahlia làm chậm
+    - Cỏ ba lá
+    - Nấm hút sắt
+    - Xạ hương thời gian
+    - Bè
+    - Bẫy o liu
+    - Cây thông ném mật
+    - Bắp cải thổi gió
+    - Nha đam chữa lành
+    - Cúc đa sắc
+    - Cỏ lăn
+    - Thủy tiên thổi gió
+    - Hoa mao lương ném bơ
+    - Khoai tây bay
+    - Sung Strangler ma thuật
+    - Nhện tỏi tây
+    - Nam việt quất tạo siro
+    - Bom hoa bơ mộng
+
+Hệ cơ bắp:
+    - Củ cải đấm bóc
+    - Củ cải phát beet
+    - Hành tây đôi
+    - Rong biển trói chân
+    - Cá sấu bơ bắn đạn
+    - Hoa ăn thịt
+    - Cua cà rốt trắng
+    - Bí đè
+    - Quái thú kiwi
+    - Đậu ăn thịt
+    - Rau diếp bơ cơ bắp
+    - Đại hoàng đánh bật
+    - Xương rồng tai thỏ
+
+Hệ lửa:
+    - Hoa rồng lửa
+    - Khoai tây giã băng
+    - Bí đỏ lửa ném
+    - Đuốc lửa
+    - Bí ngô ma ám
+    - Ớt ma
+    - Ớt lửa
+    - Washabi lửa
+    - Đậu lửa
+    - Ổi lava
+    - Chà là nóng
+    - Dây leo lửa
+    - Dương xỉ tạo bão lửa
+    - Hoa gai lửa
+    - Cỏ roi ngựa gọi thiên thạch
+    - Lá cắt lửa
+    - Hoa Bonnet lửa
+
+Hệ độc:
+    - Nấm phun con
+    - Nấm phun con dạng nước
+    - Nấm phun lớn
+    - Nấm phun cao
+    - Nấm bào tử
+    - Nấm tình yêu
+    - Hạt mít thối
+    - Tỏi đổi làn
+    - Hoa trái tim rỉ máu ném
+    - Đậu độc
+    - Lê độc
+    - Nấm răng hút máu
+    - Nấm phát độc
+    - Bom nấm kích độc
+
+Hệ điện:
+    - Lúa mạch phóng điện
+    - Cam điện
+    - Đào năng lượng
+    - Cỏ kính lúp
+    - Ô hành tím
+    - Trà điện
+    - Berry xanh tĩnh điện
+    - Đậu điện
+    - Lý chua nhiễm điện
+    - Cà chua vô cực
+    - Bom buzz button nhiễm điện
+    - Dây leo điện
+    - Chuối điện
+
+Hệ phép thuật:
+    - Cà rốt hồi sinh
+    - Hoa sen cường hóa
+    - Phỉ phù thủy
+    - Bắp cải thôi miên
+    - Nấm thôi miên
+    - Viola nhút nhát
+    - Đậu nành tạo xác sống
+    - Crocus thời gian
+    - Chuông mây gọi ong
+    - Xoài ma pháp
+
+Hệ bóng tối:
+    - Hoa mặt trăng
+    - Cà leo bóng tối
+    - Lê gai bóng tối
+    - Anh thảo bóng tối
+    - Nấm bóng tối
+    - Đậu bóng tối
+    - Dây leo mặt trăng
+    - Mắc ca bóng tối
+    - Xuân đào khí ga mặt trăng
+    - Thăng long ba đầu bóng tối

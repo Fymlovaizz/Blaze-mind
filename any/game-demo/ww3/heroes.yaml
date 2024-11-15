@@ -1,0 +1,240 @@
+Kháng chiến:
+    Trại lính: # 5
+        - C1:
+            + Lính trinh sát
+            + Lính du kích
+        - C2:
+            + Lính đặt bẫy
+            + Lính phóng lựu
+        - C3:
+            + Lính bắn tỉa
+    Xưởng xe chiến đấu: # 5
+        - C1:
+            + Xe chở quân hạng nhẹ
+            + Xe bọc thép hạng nhẹ
+        - C2:
+            + Xe bọc thép hạng trung
+            + Xe tăng chiến đấu hạng trung
+        - C3:
+            + Xe tăng bao vây
+    Xưởng xe chuyên dụng: # 4
+        - C1:
+            + Phòng không bệ phóng
+            + Radar chống nhiễu
+        - C2:
+            + Pháo tự hành
+        - C3:
+            + Xe khói
+    Nhà máy không quân: # 4
+        - C1:
+            + Trực thăng chở quân đơn cánh
+            + UAV
+        - C2:
+            + Máy bay tiêm kích
+        - C3:
+            + Máy bay vận chuyển quân
+    Xưởng đóng tàu tàu: # 4
+        - C1:
+            + Cano súng máy
+            + Cano tên lửa
+        - C2:
+            + Tàu tuần tra:
+                </> Súng
+                </> Ngư lôi
+                </> Radar hải quân
+        - C3:
+            + Tàu chiến tên lửa:
+                </> Tên lửa
+                </> Phòng không
+                </> Radar không quân
+    Xưởng nguyên mẫu: # 4
+        - C1:
+            + Xe tăng du kích:
+                </> Di chuyển và ẩn nấp được trong rừng, kháng giảm tốc địa hình. 
+                    Đứng im nhận lớp phủ.
+                </> Tạo ra 1 vùng đặc biệt và làm giảm toàn bộ chỉ số địch, tăng chỉ số đồng minh.
+        - C2:
+            + Pháo rải mìn:
+                </> Di chuyển và ẩn nấp được trong rừng, kháng giảm tốc địa hình. 
+                    Đứng im nhận lớp phủ.
+                </> Bắn 1 loạt đạn phát nổ, để lại mìn và mảnh kim loại trong khu vực.
+            + Máy đào địa đạo:
+                </> Khi đứng im sẽ nhận lớp phủ mặt đất, giúp giảm 60% sát thương. 
+                    Tăng dần theo máu mất (4%->1%) nhưng mất luôn khi di chuyển.
+                </> Kích hoạt sẽ đào 1 đường hầm tới điểm chỉ định, cho phép đồng minh sử dụng để di chuyển nhanh.
+        - C3:
+            + Tổ hợp phòng không, quan sát phức hợp:
+                </> Phát hiện được cả mục tiêu đang tàn hình hay mục tiêu gây nhiễu.
+                </> Kích hoạt cung cấp tầm nhìn chuẩn, bỏ qua mọi biện pháp phòng chống của kẻ thù trong vài giây.
+                    Vô hiệu hóa khả năng của các đơn vị trong 3s với xe thường và gấp đôi với loại chuyên dụng
+                    Ngoài ra, vô hiệu hóa toàn bộ công sự địch.
+
+
+
+Le-Trong-Giap:
+    - Trại lính:
+        + Lính du kích
+        + Lính săn tăng
+        + Lính đặt bẫy
+    - Xưởng xe chiến đấu:
+        + Xe chở quân < 
+            - chở được 8 đơn vị lính
+            - có thể di chuyên trong rừng
+        + Xe bọc thép tấn công < 
+            - tốc độ được tối ưu
+            - đạn xuyên giáp
+        + Xe tăng du kích <
+            - có thể tấn công chí mạng
+            - tốc độ được tối ưu
+            - di chuyển được trong rừng
+            - di chuyển nhanh hơn dưới nước
+            - có thể ẩn náu dưới đất khi đứng im
+    - Xưởng xe chuyên dụng:
+        + Phòng không bệ phóng <
+            - sát thương lớn hơn
+            - tầm đánh xa hơn
+        + Pháo tự hành <
+            - tấn công xa hơn
+            - di chuyển được trong rừng
+        + Xe khói
+            - tạo khói che phủ đồng minh, khiến kẻ thù không thể khóa mục tiêu
+    - Nhà máy không quân:
+        + Trực thăng vận tải đơn cánh
+            - chở được 4 lính
+        + Máy bay tiêm kích
+            - tốc độ nhanh hơn
+            - khóa các mục tiêu trên không nhanh hơn
+            - tốc độ tên lửa nhanh hơn
+            - không tấn công được các đơn vị dưới đất
+        + Máy bay vận tải
+            - chở được 24 hành lí
+            - sinh lực lớn hơn, đánh đổi bằng giáp và tốc độ
+    - Nhà máy nguyên mẫu:
+        + Nghệ thuật du kích:
+            < Xe tăng
+            < Tấn công bằng đạn có thể chí mạng
+            < Du kích >
+                Rời giao tranh tăng mạnh tốc chạy và khả năng vượt địa hình cho bản thân
+                và các đơn vị xung quanh. Đồng thời cho cả đội nhận hiệu ứng du kích,
+                thứ giúp đòn đánh kế gây chí mạng và làm suy nhược tinh thần đối thủ.
+
+                Đơn vị có thể di chuyển trong rừng nhưng sẽ bị giảm tốc độ và tầm nhìn.
+
+                Đơn vị có thể di chuyển dưới nước nhanh hơn.
+            < Bẫy >
+                Đặt 1 cái bẫy tại vị trí chỉ định. Đơn vị lính nào dẫm phải sẽ chịu 1 ít
+                sát thương và nhiễm độc. Toàn bộ đơn vị ở gần kẻ xấu số ấy cũng sẽ giảm
+                tinh thần trầm trọng.
+        + Trận địa pháo binh:
+            < Pháo tự hành
+            < Tấn công bằng pháo làm giảm giáp
+            < Du kích >
+                [./Nghệ thuật du kích/Du kích/]
+            < Tập kích >
+                Tấn công vùng chỉ định bằng loại pháo, sau đó tăng cường tốc đánh, tỉ lệ
+                chí mạng, sát thương chí mạng cho tất cả đơn vị xung quanh. Mọi đòn tấn
+                công bằng pháo binh xung quanh giờ cũng có thể gây suy nhược tinh thần 
+                đối thủ.
+        + Tổ hợp trinh sát phức hợp:
+            < Xe radar
+            < Radar không quân (khi triển khai)
+            < Kĩ thuật đỏ >
+                Phương tiện này có thể phát hiện được các đơn vị gây nhiễu radar và các đơn
+                vị tàn hình.
+
+                Tự động khóa 2 đơn vị đầu tiên vào vùng quét radar, làm giảm khả năng né tránh
+                của chúng.
+            < Gây nhiễu >
+                Tạo ra 1 vùng nhiễu, vô hiệu hóa các đơn vị chức năng trong 4s và các đơn cơ giới
+                khác trong 2s. Các đơn vị có lá chắn tàn hình thì chịu hiệu ứng trong 16s.
+
+Zukov:
+    - Trại lính:
+        + Lính trinh sát
+        + Lính phóng lựu
+        + Lính tỉa
+    - Xưởng xe chiến đấu:
+        + Xe bọc thép hạng nhẹ
+        + Xe tăng chiến đấu hạng trung
+        + Xe tăng chiến đấu hạng nặng
+    - Xưởng xe chuyên dụng:
+        + Phòng không bệ phóng
+        + Tên lửa phóng dành <
+            - phóng loạt tên lửa
+            - diện rộng đánh đổi bằng sát thương
+        + Xe khói
+    - Nhà máy không quân:
+        + Trực thăng chiến đấu
+        + Máy bay tiêm kích
+        + Máy bay ném bom <
+            - tốc độ nhanh hơn 1 máy bay chiến đấu
+            - ném bom chiến thuật / chiến lược
+    - Nhà máy nguyên mẫu:
+        + Đồ khui hộp:
+        + Chiến binh phương Bắc:
+        + Bàn tay thần chết:
+            < Bệ phóng tên lửa di động
+            < Phóng tên lửa gây sát thương với tầm đánh xa
+            < Tắc kè >
+                Khi bị tấn công sẽ nhả khói để ẩn thân trong 9s. Trong thời gian này
+                gia tăng tốc độ triển khai và tốc độ di chuyển.
+            < Đạn đạo >
+                Tấn công bằng tên lửa đạn đạo, cung cấp tầm đánh xa và độ chính xác, tốc độ
+                tên lửa lớn, gần như không thể đánh chặn. Có thể mang theo đầu đạn hủy diệt.
+
+Lin-Huai:
+    - Trại lính:
+        + Lính dân
+        + Lính săn tăng
+        + Lính tỉa
+    - Xưởng xe chiến đấu:
+        + Xe bọc thép hạng nhẹ
+        + Xe tăng tấn công nhanh
+        + Xe tăng chiến đấu hạng trung
+        + [Không có xe cấp 3, đổi lại cấp 2 có 2 loại]
+    - Xưởng xe chuyên dụng:
+        + Phòng không bệ phóng
+        + Pháo tự hành
+        + Xe cường trí
+    - Xưởng đóng tàu:
+        + Cano súng máy
+        + Tàu ngầm tấn công <
+            - ngư lôi
+            - cao xạ
+        + Tàu chiến tên lửa <
+            - pháo
+            - tên lửa hải đối hải
+    - Nhà máy nguyên mẫu:
+        + Trái tim quả cảm:
+        + Làn sóng đỏ:
+        + : # Chưa nghĩ ra
+Manstegar:
+    - Trại lính:
+    - Xưởng xe chiến đấu:
+    - Xưởng xe chuyên dụng:
+    - Nhà máy không quân:
+    - Nhà máy nguyên mẫu:
+Yamato:
+    - Trại lính:
+    - Xưởng xe chiến đấu:
+    - Nhà máy không quân:
+    - Xưởng đóng tàu:
+    - Nhà máy nguyên mẫu:
+Eihower:
+    - Trại lính:
+    - Xưởng xe chiến đấu:
+    - Nhà máy không quân:
+    - Xưởng đóng tàu:
+    - Nhà máy nguyên mẫu:
+Puton:
+    - Trại lính:
+    - Xưởng xe chiến đấu:
+    - Xưởng xe chuyên dụng:
+    - Nhà máy không quân:
+    - Nhà máy nguyên mẫu:
+Romeos:
+    - Trại lính:
+    - Xưởng xe chiến đấu:
+    - Nhà máy không quân:
+    - Xưởng đóng tàu:
+    - Nhà máy nguyên mẫu:
