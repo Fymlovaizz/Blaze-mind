@@ -115,4 +115,4 @@ Sinh vật:
    - Kích thước: 35-55 micromet
    - Di chuyển:
       + Roi
-      + 120 micromet
+      + 120 micromet/giây
