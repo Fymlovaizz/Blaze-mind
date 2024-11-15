@@ -142,3 +142,4 @@ Sinh vật:
    - Di chuyển:
       + Roi
       + 120 micromet/giây
+â
