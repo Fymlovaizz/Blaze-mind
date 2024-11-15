@@ -119,7 +119,7 @@ Sinh vật:
 
       + Trong thời gian sinh sản các sinh vật tham gia phải đứng im.
 
-<!-- 3. Trùng giày (Paramecium):
+3. Trùng giày (Paramecium):
    - Hình dạng: khối, không đối xứng
    - Kích thước: 50-350 micromet
    - Di chuyển:
@@ -142,6 +142,7 @@ Sinh vật:
    - Di chuyển:
       + Roi
 <<<<<<< HEAD
+<<<<<<< HEAD
       + 120 micromet/giây
 =======
       + 120 micromet -->
@@ -149,3 +150,6 @@ Sinh vật:
 
 
 ê thằng l
+=======
+
+>>>>>>> a07eee93ed8734f2cbd6cffa2b8806d9dd605a60
