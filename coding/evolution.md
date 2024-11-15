@@ -146,3 +146,6 @@ Sinh vật:
 =======
       + 120 micromet -->
 >>>>>>> fca148c2bb3e667074f743667ebcc15259710dd6
+
+
+ê thằng l
