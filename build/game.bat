@@ -6,18 +6,18 @@ set "folder=coding"
 set count=0
 
 cls
-echo Danh sách các file:
+echo Danh sach cac file:
 for %%f in (%folder%\*.cpp %folder%\*.py) do (
     set /a count+=1
     echo - %%~nxf
 )
 
 if %count%==0 (
-    echo Không tìm thấy file .cpp hoặc .py trong thư mục %folder%.
+    echo Khong tim thay file .cpp hoac .py trong thu muc %folder%.
     exit /b
 )
 
-set /p choice="Nhập tên file: "
+set /p choice="Nhap ten file: "
 
 set "selected_file="
 for %%f in (%folder%\*.cpp %folder%\*.py) do (
@@ -27,17 +27,17 @@ for %%f in (%folder%\*.cpp %folder%\*.py) do (
 )
 
 if not defined selected_file (
-    echo Không tìm thấy file nào phù hợp.
+    echo Khong tim thay file nao phu hop.
     exit /b
 )
 
 cls
 if /i "%selected_file:~-4%"==".cpp" (
     :menu
-    echo Chọn yêu cầu:
+    echo Chon yeu cau:
     echo 1 - Compile
     echo 2 - Run .exe
-    echo 3 - Compile và Run
+    echo 3 - Compile va Run
     echo 0 - End
     set /p compile_choice=">> "
 
@@ -57,7 +57,7 @@ if /i "%selected_file:~-4%"==".cpp" (
     ) else if "%compile_choice%"=="0" (
         goto end
     ) else (
-        echo Lựa chọn không hợp lệ.
+        echo Lua chon khong hop le.
         goto menu
     )
 ) else (
