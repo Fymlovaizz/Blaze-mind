@@ -4,7 +4,7 @@ BM::math::Vector2f region_spam_plant = BM::math::Vector2f(1920.f, 1920.f) * 10.f
 int number_animals = 10;
 int number_plants = 12500;
 bool show_quadtree_animal = false;
-bool show_quadtree_resource = false;
+bool show_quadtree_resource = true;
 float time_more = 10.f;
 
 namespace ng {

@@ -1,5 +1,5 @@
-#ifndef __BM_LIBRARIES_ALGORITHM_QUADTREE_HPP__
-#define __BM_LIBRARIES_ALGORITHM_QUADTREE_HPP__
+#ifndef _BM_LIBRARIES_ALGORITHM_QUADTREE_HPP_
+#define _BM_LIBRARIES_ALGORITHM_QUADTREE_HPP_
 
 #include <libraries.lib/math.lib/vector/vector2.hpp>
 #include <libraries.lib/math.lib/rect.hpp>
@@ -22,6 +22,7 @@ private:
     math::Rect<T_size> biggest;
 
     sf::RectangleShape line;
+    std::size_t num_objects = 0;
 public:
     // Constructor - Khoi tao QuadTree
     QuadTree(math::Rect<T_size> bounds, int level = 4, int max_objects = 4)
@@ -106,6 +107,8 @@ public:
         if (size_object.bottom > biggest.bottom)
         biggest.bottom = size_object.bottom;
 
+        num_objects++;
+
         if (nodes[0] != nullptr) { // Neu nut hien tai da duoc chia
             int index = getIndex(object); // Lay chi so cua doi tuong
             if (index != -1 && nodes[index] != nullptr) {
@@ -134,7 +137,7 @@ public:
     }
 
     // Phuong thuc truy van cac doi tuong gan doi tuong cho truoc
-    void retrieve(std::vector<std::pair<math::Vector2<T_size>, T_value*>>& returnObjects, math::Vector2<T_size> position, math::Rect<T_size> size_object) {
+    void retrieve(std::vector<T_value*>& returnObjects, math::Vector2<T_size> position, math::Rect<T_size> size_object) {
         int index = getIndex({position, nullptr}); // Lay chi so cua doi tuong trong cac nut con
 
         switch (index) { // Truy van cac doi tuong trong nut con tuong ung
@@ -194,23 +197,47 @@ public:
             default:
             {
                 if (nodes[0] != nullptr) {
-                    nodes[0]->retrieve(returnObjects, position, size_object);
+                    if (
+                        position.x + size_object.right > nodes[0]->getBounds().left + nodes[0]->getBiggest().left
+                        &&
+                        position.y + size_object.bottom > nodes[0]->getBounds().top + nodes[0]->getBiggest().top
+                    ) {
+                        nodes[0]->retrieve(returnObjects, position, size_object);
+                    }
                 }
                 if (nodes[1] != nullptr) {
-                    nodes[1]->retrieve(returnObjects, position, size_object);
+                    if (
+                        position.x + size_object.left < nodes[1]->getBounds().right + nodes[1]->getBiggest().right
+                        &&
+                        position.y + size_object.bottom > nodes[1]->getBounds().top + nodes[1]->getBiggest().top
+                    ) {
+                        nodes[1]->retrieve(returnObjects, position, size_object);                    
+                    }
                 }
                 if (nodes[2] != nullptr) {
-                    nodes[2]->retrieve(returnObjects, position, size_object);
+                    if (
+                        position.x + size_object.left < nodes[2]->getBounds().right + nodes[2]->getBiggest().right
+                        &&
+                        position.y + size_object.top < nodes[2]->getBounds().bottom + nodes[2]->getBiggest().bottom
+                    ) {
+                        nodes[2]->retrieve(returnObjects, position, size_object);                    
+                    }
                 }
                 if (nodes[3] != nullptr) {
-                    nodes[3]->retrieve(returnObjects, position, size_object);
+                    if (
+                        position.x + size_object.right > nodes[3]->getBounds().left + nodes[3]->getBiggest().left
+                        &&
+                        position.y + size_object.top < nodes[3]->getBounds().bottom + nodes[3]->getBiggest().bottom
+                    ) {
+                        nodes[3]->retrieve(returnObjects, position, size_object);                    
+                    }
                 }
                 break;
             }
         }
 
         // Them cac doi tuong trong nut hien tai vao danh sach tra ve
-        returnObjects.insert(returnObjects.end(), objects.begin(), objects.end());
+        for (auto& object : objects) { returnObjects.push_back(object.second); }
     }
 
     // Phuong thuc xoa tat ca cac doi tuong va cac nut con trong QuadTree
@@ -223,10 +250,13 @@ public:
             }
         }
         objects.clear(); // Xoa tat ca doi tuong trong nut hien tai
+        num_objects = 0;
     }
 
     const math::Rect<T_size>& getBounds() const { return bounds; }
     const math::Rect<T_size>& getBiggest() const { return biggest; }
+
+    std::size_t size() const { return num_objects; }
 };
 
 } // namespace algorithm
