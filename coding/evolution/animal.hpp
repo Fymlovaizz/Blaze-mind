@@ -13,8 +13,6 @@ private:
     bool has_move = false;
     float time = 0;              // Thoi gian hien tai
 
-    float attack;                // Suc tan cong
-
     float energy;                // Nang luong hien tai
     float max_energy;            // Nang luong toi da
 
@@ -36,7 +34,6 @@ public:
 
         this->direction = BM::math::Vector2f(0, 0);
         this->health = 100;
-        this->attack = 10;
         this->age = BM::math::getRandomFloat(90.f, 150.f);
         this->max_energy = 120;
         this->energy = BM::math::getRandomFloat(this->max_energy / 2.f, this->max_energy);
