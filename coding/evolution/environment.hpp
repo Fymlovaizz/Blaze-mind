@@ -1,13 +1,17 @@
 BM::math::Vector2f size_quadtree = BM::math::Vector2f(1920.f, 1920.f) * 100.f;
 BM::math::Vector2f region_spam_animal = BM::math::Vector2f(1920.f, 1920.f) * 3.f;
-BM::math::Vector2f region_spam_plant = BM::math::Vector2f(1920.f, 1920.f) * 15.f;
+BM::math::Vector2f region_spam_plant = BM::math::Vector2f(1920.f, 1920.f) * 10.f;
 int number_animals = 10;
 int number_plants = 12500;
 bool show_quadtree_animal = false;
 bool show_quadtree_resource = false;
+float time_more = 10.f;
 
 namespace ng {
 
+// SampleObject la 1 doi tuong duoc thiet ke cho viec su dung cac widget.
+// Muon tim hieu them co the vo SampleObject de xem thu code cua no.
+// Moi ham handle duoc ke thua tu SampleObject se duoc goi tu cua so mot cach tu dong.
 class Bio : public SampleObject {
 private:
     mutable sf::View view; // Che do xem cua cua so
@@ -27,29 +31,40 @@ private:
     void checkCollisions(BM::algorithm::QuadTree<float, T>& quadtree) const {
         std::vector<Animal> virtual_animals;
         for (auto& animal : animals) {
-            std::vector<std::pair<BM::math::Vector2<float>, T*>> nearbyEntities;
+            std::vector<T*> nearbyEntities;
             quadtree.retrieve(nearbyEntities, animal.getPosition(), {-animal.getRadius(), animal.getRadius(), -animal.getRadius(), animal.getRadius()});
             for (auto& other : nearbyEntities) {
-                if (other.second != nullptr) {
+                if (other != nullptr) {
                     if (std::is_same<T, Animal>::value) {
-                        // Animal* otherAnimal = dynamic_cast<Animal*>(other.second);
+                        // Animal* otherAnimal = dynamic_cast<Animal*>(other);
                         // if (&animal == otherAnimal) continue;
                     }
                     else {
-                        Resource* otherResource = dynamic_cast<Resource*>(other.second);
-                        BM::math::Vector2f delta = {otherResource->getPosition() - animal.getPosition()};
-                        float distance = delta.length_squared();
-                        float radius_sum = (animal.getRadius() + otherResource->getRadius()) * (animal.getRadius() + otherResource->getRadius());
-                        animal.putTargetResource(delta, distance - radius_sum);
-                        if (distance < radius_sum) {
-                            otherResource->setHealth(0);
-                            if (animal.appendEnergy(otherResource->getEnergy())) {
-                                virtual_animals.emplace_back(Animal(animal.getPosition(), -animal.getRotation()));
-                                virtual_animals.back().setColor(BM::math::getRandomGeneticColor(animal.getColor()));
-                                virtual_animals.back().setIndex(40.f, 80.f, 100.f);
-                                virtual_animals.back().setVision(BM::math::max(10000.f, animal.getVision() + BM::math::getRandomFloat(-900.f, 900.f)));
-                                virtual_animals.back().setVelocity(BM::math::max(50.f, animal.getVelocity() + BM::math::getRandomFloat(-5.f, 5.f)));
+                        try {
+                            Resource* otherResource = dynamic_cast<Resource*>(other);
+                            if (otherResource != nullptr) {
+                                BM::math::Vector2f delta = {otherResource->getPosition() - animal.getPosition()};
+                                float distance = delta.length_squared();
+                                float radius_sum = (animal.getRadius() + otherResource->getRadius()) * (animal.getRadius() + otherResource->getRadius());
+                                float vision = distance + radius_sum - 2 * sqrt(distance) * sqrt(radius_sum);
+                                animal.putTargetResource(delta, vision);
+                                if (distance < radius_sum) {
+                                    otherResource->setHealth(0);
+                                    if (animal.appendEnergy(otherResource->getEnergy())) {
+                                        virtual_animals.emplace_back(Animal(animal.getPosition(), -animal.getRotation()));
+                                        virtual_animals.back().setColor(BM::math::getRandomGeneticColor(animal.getColor()));
+                                        virtual_animals.back().setIndex(40.f, 80.f, 100.f);
+                                        virtual_animals.back().setVision(BM::math::max(10000.f, animal.getVision() + BM::math::getRandomFloat(-900.f, 900.f)));
+                                        virtual_animals.back().setVelocity(BM::math::max(50.f, animal.getVelocity() + BM::math::getRandomFloat(-5.f, 5.f)));
+                                    }
+                                }
                             }
+                        }
+                        catch (const std::exception& e) {
+                            std::cout << "Caught exception: " << e.what() << std::endl;
+                        }
+                        catch (...) {
+                            std::cout << "Caught unknown exception" << std::endl;
                         }
                     }
                 }
@@ -65,7 +80,7 @@ private:
         quadtree_resource.clear(); // Xoa cac thuc the cu khoi quadtree
         std::vector<Resource> virtual_resources;
         for (auto it = resources.begin(); it != resources.end(); ) {
-            int update = it->update(window->getDeltatime());
+            int update = it->update(window->getDeltatime() * time_more);
             if (update == -1) {
                 it = resources.erase(it); // Xoa tai nguyen neu het suc khoe
                 continue;
@@ -101,7 +116,7 @@ private:
     void processing_animals() const {
         quadtree_animal.clear(); // Xoa cac thuc the cu khoi quadtree
         for (auto it = animals.begin(); it != animals.end(); ) {
-            if (it->update(window->getDeltatime()) == -1 || it->getHealth() <= 0) {
+            if (it->update(window->getDeltatime() * time_more) == -1 || it->getHealth() <= 0) {
                 resources.emplace_back(Resource(it->getPosition(), 0));
                 resources.back().setType(1, it->getRadius() * 0.5f);
                 it = animals.erase(it); // Xoa dong vat neu het tuoi tho hoac suc khoe
