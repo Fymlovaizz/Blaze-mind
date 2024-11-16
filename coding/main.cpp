@@ -15,6 +15,7 @@
 
 #include <evolution/entity.hpp>
 #include <evolution/resource.hpp>
+#include <evolution/animal.hpp>
 #include <evolution/environment.hpp>
 
 int main() {
