@@ -1,6 +1,6 @@
 
 // Lop animal - Doi tuong dong vat, ke thua tu lop Entity
-class animal : public Entity {
+class Animal : public Entity {
 private:
     std::string name; // Ten cua dong vat
 

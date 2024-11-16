@@ -1,5 +1,5 @@
 
-class resource : public Entity {
+class Resource : public Entity {
 private:
     int type; // Loai tai nguyen
     float time = 0;
@@ -13,7 +13,7 @@ private:
     }
 public:
     // Constructor
-    resource(BM::math::Vector2f position, float rotation) {
+    Resource(BM::math::Vector2f position, float rotation) {
         setPosition(position);
         setRotation(rotation);
 
